@@ -1,0 +1,43 @@
+header {
+  padding-left: 100px;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+header ul li h2 {
+  font-size:  20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+header ul li h3 {
+  font-size: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+header ul li p {
+  font-size: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  padding-right: 30px;
+}
+
+header ul li img {
+  width: 20px;
+  height: 20px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+header ul li {
+  display: inline-flex;
+  align-items: flex-start;
+}

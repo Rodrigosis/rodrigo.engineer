@@ -1,0 +1,24 @@
+main {
+    font-family: "arial", sans-serif;
+    text-align: center;
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+main h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 25px;
+    padding: 10PX;
+}
+
+main ul li {
+    font-family: 'Nunito', sans-serif;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.linguagens {
+    display: inline-flex;
+}
