@@ -5,7 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('template.html', titulo_my_name='Rodrigo da Silva Souza')
+    topicos = ['Física', 'Química', 'Cálculo', 'Elétrica', 'Eletrônica', 'IoT', 'AI',
+               'Python', 'Java', 'JavaScript', 'HTML/CSS', 'Arquitetura de software']
+
+    return render_template('index.html', titulo_my_name='Rodrigo da Silva Souza', lista=topicos)
 
 
 app.run()
