@@ -49,19 +49,25 @@
         <div id="idea"><a href="ideias"><img src="../static/img/lampada.png" width="30" height="30" alt="Sugira ideias"></a></div>
     </header>
     <main>
+        {% block conteudo %}{% endblock %}
+        {% for topico in lista %}
+            <tr>
+                <td>{{ topico }}</td>
+            </tr>
+        {% endfor %}
         <h1>{{ titulo_my_name }}</h1>
     </main>
     <footer>
         <div>&copy; Rodrigo da Silva Souza 2019</div>
         <ul>
             <!--
-            <li><a href="#"><img src="img/button-usa.png" width="20" height="15" alt="switch to english language"></a></li>
-            <li><a href="#"><img src="img/button-bra.png" width="20" height="15" alt="mudar para língua portuguesa"></a></li>
-            <li><a href="#"><img src="img/button-jap.png" width="20" height="15" alt="日本語に切り替える"></a></li>
+            <li><a href="#"><img src="../static/img/button-usa.png" width="20" height="15" alt="switch to english language"></a></li>
+            <li><a href="#"><img src="../static/img/button-bra.png" width="20" height="15" alt="mudar para língua portuguesa"></a></li>
+            <li><a href="#"><img src="../static/img/button-jap.png" width="20" height="15" alt="日本語に切り替える"></a></li>
             -->
             <li><a href="#"><img src="../static/img/bug-white.png" width="15" height="15" alt="reporte um bug"></a></li>
         </ul>
     </footer>
   </body>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="../static/js/index.js"></script>
 </html>

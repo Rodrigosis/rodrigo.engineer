@@ -1,56 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CV Rodrigo Silva</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/cv.css">
-  </head>
-  <body>
-    <script>
+{% extends "template.html" %}
+{% block conteudo %}
+  <h1>Rodrigo da Silva Souza</h1>
 
-    </script>
-    <header>
-      <h1>Rodrigo da Silva Souza</h1>
+  <ul>
+    <li><img src="midia/map.png" alt="Localização" width=60 height=40></li>
+    <li><h2>Yyy Yyyyy, Yyyyyy - YY</h2></li>
+  </ul>
 
-      <ul>
-        <li><img src="midia/map.png" alt="Localização" width=60 height=40></li>
-        <li><h2>Yyy Yyyyy, Yyyyyy - YY</h2></li>
-      </ul>
+  <ul>
+    <li><img src="midia/telephone.png" alt="Celular" width=60 height=40></li>
+    <li><h2>+77 (77) 777777777</h2></li>
+  </ul>
 
-      <ul>
-        <li><img src="midia/telephone.png" alt="Celular" width=60 height=40></li>
-        <li><h2>+77 (77) 777777777</h2></li>
-      </ul>
+  <ul>
+    <li><img src="midia/email.png" alt="email" width=60 height=40></li>
+    <li><h2>rrrrrrr.rrr.rr@rrrrr.rrr</h2></li>
+  </ul>
 
-      <ul>
-        <li><img src="midia/email.png" alt="email" width=60 height=40></li>
-        <li><h2>rrrrrrr.rrr.rr@rrrrr.rrr</h2></li>
-      </ul>
+  <ul>
+    <li><img src="midia/site.png" alt="Meu site" width=60 height=40></li>
+    <li><h2>rodrigo.engineer</h2></li>
+  </ul>
 
-      <ul>
-        <li><img src="midia/site.png" alt="Meu site" width=60 height=40></li>
-        <li><h2>rodrigo.engineer</h2></li>
-      </ul>
+  <ul>
+    <li><img src="midia/linkedin-cv.png" alt="Linkedin" width=60 height=40></li>
+    <li><h2>www.linkedin.com/in/rodrigo-silva-souza</h2></li>
+  </ul>
 
-      <ul>
-        <li><img src="midia/linkedin-cv.png" alt="Linkedin" width=60 height=40></li>
-        <li><h2>www.linkedin.com/in/rodrigo-silva-souza</h2></li>
-      </ul>
+  <ul>
+    <li><img src="midia/github.png" alt="GitHub" width=60 height=40></li>
+    <li><h2>https://github.com/Rodrigosis</h2></li>
+  </ul>
 
-      <ul>
-        <li><img src="midia/github.png" alt="GitHub" width=60 height=40></li>
-        <li><h2>https://github.com/Rodrigosis</h2></li>
-      </ul>
-
-      <ul>
-        <li><h3>Estado civil: </h3><p>++++++++</p></li>
-        <li><h3>Data de nascimento: </h3><p>00/00/0000</p></li>
-        <li><h3>Nacionalidade: </h3><p>Brasileiro</p></li>
-      </ul>
-    </header>
-    <main>
-
-    </main>
-  </body>
-</html>
+  <ul>
+    <li><h3>Estado civil: </h3><p>++++++++</p></li>
+    <li><h3>Data de nascimento: </h3><p>00/00/0000</p></li>
+    <li><h3>Nacionalidade: </h3><p>Brasileiro</p></li>
+  </ul>
+{% endblock %}
