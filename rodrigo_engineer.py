@@ -11,4 +11,4 @@ def index():
     return render_template('index.html', titulo_my_name='Rodrigo da Silva Souza', lista=topicos)
 
 
-app.run()
+app.run(debug=True)
