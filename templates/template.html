@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Rodrigo Souza</title>
     <link rel="shortcut icon" href="../static/img/favicon.jpg">
-    <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/template.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='template.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
@@ -48,14 +49,16 @@
         </nav>
         <div id="idea"><a href="ideias"><img src="../static/img/lampada.png" width="30" height="30" alt="Sugira ideias"></a></div>
     </header>
-    <main>
-        {% block conteudo %}{% endblock %}
-        {% for topico in lista %}
+    <main class="corpo">
+        {% block conteudo %}
+
+        {% endblock %}
+        <!--{% for topico in lista %}
             <tr>
                 <td>{{ topico }}</td>
             </tr>
         {% endfor %}
-        <h1>{{ titulo_my_name }}</h1>
+        <h1>{{ titulo_my_name }}</h1>-->
     </main>
     <footer>
         <div>&copy; Rodrigo da Silva Souza 2019</div>
@@ -69,5 +72,5 @@
         </ul>
     </footer>
   </body>
-  <script type="text/javascript" src="../static/js/index.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='template.js') }}"></script>
 </html>
