@@ -16,37 +16,37 @@
   <body>
     <header>
         <div>
-            <a href="index.html"><img id="my-img" src="../static/img/favicon.jpg" width="50" height="50" alt="Foto de Rodrigo da Silva Souza"></a>
+            <a href="{{ url_for('index') }}"><img id="my-img" src="{{ url_for('static', filename='img/favicon.jpg') }}" width="50" height="50" alt="Foto de Rodrigo da Silva Souza"></a>
         </div>
-        <h1><a href="index.html">Rodrigo Souza</a></h1>
+        <h1><a href="{{ url_for('index') }}">Rodrigo Souza</a></h1>
         <div>
             <ul id="redes-sociais">
                 <li>
                     <a href="https://github.com" data-tooltip="Veja meus projetos opensource" target="_blank">
-                        <img src="../static/img/github-white.png" width="30" height="30" alt="Icone do GitHub">
+                        <img src="{{ url_for('static', filename='img/github-white.png') }}" width="30" height="30" alt="Icone do GitHub">
                     </a>
                 </li>
                 <li>
                     <a href="https://linkedin.com" data-tooltip="Veja meu currículo" target="_blank">
-                        <img src="../static/img/linkedin-white.png" width="30" height="30" alt="Icone do Linkedin">
+                        <img src="{{ url_for('static', filename='img/linkedin-white.png') }}" width="30" height="30" alt="Icone do Linkedin">
                     </a>
                 </li>
                 <li>
-                    <a href="cv.html" data-tooltip="Veja meu curriculum vitae" target="_blank">
-                        <img src="../static/img/cv-white.png" width="30" height="30" alt="Icone do curriculum vitae">
+                    <a href="{{ url_for('curriculo') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
+                        <img src="{{ url_for('static', filename='img/cv-white.png') }}" width="30" height="30" alt="Icone do curriculum vitae">
                     </a>
                 </li>
             </ul>
         </div>
         <nav>
             <ul id="navegacao">
-                <li><a href="projetos.html">PROJETOS</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="{{ url_for('projetos') }}">PROJETOS</a></li>
+                <li><a href="{{ url_for('sobre') }}">SOBRE</a></li>
+                <li><a href="{{ url_for('contato') }}">CONTATO</a></li>
+                <li><a href="blog">BLOG</a></li>
             </ul>
         </nav>
-        <div id="idea"><a href="ideias"><img src="../static/img/lampada.png" width="30" height="30" alt="Sugira ideias"></a></div>
+        <div id="idea"><a href="ideias"><img src="{{ url_for('static', filename='img/lampada.png') }}" width="30" height="30" alt="Sugira ideias"></a></div>
     </header>
     <main class="corpo">
         {% block conteudo %}
@@ -63,11 +63,11 @@
         <div>&copy; Rodrigo da Silva Souza 2019</div>
         <ul>
             <!--
-            <li><a href="#"><img src="../static/img/button-usa.png" width="20" height="15" alt="switch to english language"></a></li>
-            <li><a href="#"><img src="../static/img/button-bra.png" width="20" height="15" alt="mudar para língua portuguesa"></a></li>
-            <li><a href="#"><img src="../static/img/button-jap.png" width="20" height="15" alt="日本語に切り替える"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/button-usa.png') }}" width="20" height="15" alt="switch to english language"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/button-bra.png') }}" width="20" height="15" alt="mudar para língua portuguesa"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/button-jap.png') }}" width="20" height="15" alt="日本語に切り替える"></a></li>
             -->
-            <li><a href="#"><img src="../static/img/bug-white.png" width="15" height="15" alt="reporte um bug"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/bug-white.png') }}" width="15" height="15" alt="reporte um bug"></a></li>
         </ul>
     </footer>
   </body>
