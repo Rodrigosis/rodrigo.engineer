@@ -128,3 +128,13 @@ footer ul li {
 .linguagens {
     display: inline-flex;
 }
+
+.sidebar {
+    width: 25%
+    background-color: #00000
+    display: inline-box
+}
+
+.sidebar_item {
+    color: #fffff
+}

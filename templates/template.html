@@ -48,6 +48,14 @@
         </nav>
         <div id="idea"><a href="#"><img src="{{ url_for('static', filename='img/lampada.png') }}" width="30" height="30" alt="Sugira ideias"></a></div>
     </header>
+    <aside class="sidebar">
+        <h3>MENU</h3>
+        <ul>
+            <li><a href="#" class="sidebar_item">Item 1</a></li>
+            <li><a href="#" class="sidebar_item">Item 2</a></li>
+            <li><a href="#" class="sidebar_item">Item 3</a></li>
+        </ul>
+    </aside>
     <main class="corpo">
         {% block conteudo %}
 
@@ -71,5 +79,5 @@
         </ul>
     </footer>
   </body>
-  <script type="text/javascript" src="{{ url_for('static', filename='template.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/template.js') }}"></script>
 </html>
