@@ -11,6 +11,7 @@ header {
     align-items: center;
     display: inline-flex;
     width: 100%;
+    position: fixed;
 }
 
 header a {
@@ -130,11 +131,28 @@ footer ul li {
 }
 
 .sidebar {
-    width: 25%
-    background-color: #00000
-    display: inline-box
+    padding-top: 62px;
+    width: 200px;
+    display: block;
+    position: fixed;
 }
 
 .sidebar_item {
-    color: #fffff
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.sidebar_item:hover {
+    background-color: #ccc;
+}
+
+.activate_menu {
+    background-color: rgb(38, 48, 61);
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
 }
