@@ -100,7 +100,6 @@ footer ul li {
 
 #idea {
     position: fixed;
-    align-items: flex-end;
     right: 20px;
     bottom: 30px;
 }
@@ -108,8 +107,7 @@ footer ul li {
 .corpo {
     font-family: "arial", sans-serif;
     text-align: center;
-    padding: 0px;
-    padding-top: 30px;
+    padding-top: 100px;
     padding-bottom: 30px;
     box-sizing: border-box;
 }
@@ -126,15 +124,45 @@ footer ul li {
     font-size: 15px;
 }
 
+.buscar {
+    background-color: #eee;
+    color: black;
+    display: block;
+    height: 39px;
+    padding-top: 4px;
+}
+
+.txtBuscar {
+    display: inline-block;
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 15px;
+    border: none;
+    height: 32px;
+    width: 210px;
+}
+
+.btnBuscar {
+    text_inline: center;
+    float: right;
+    height: 20px;
+    width: 20px;
+    padding: 6px;
+}
+
 .linguagens {
     display: inline-flex;
 }
 
 .sidebar {
-    padding-top: 62px;
-    width: 200px;
+    top: 62px;
+    width: 250px;
     display: block;
     position: fixed;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
 }
 
 .sidebar_item {
@@ -146,7 +174,7 @@ footer ul li {
 }
 
 .sidebar_item:hover {
-    background-color: #ccc;
+    color: #0431B4;
 }
 
 .activate_menu {

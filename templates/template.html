@@ -43,19 +43,33 @@
                 <li><a href="{{ url_for('projetos') }}">PROJETOS</a></li>
                 <li><a href="{{ url_for('sobre') }}">SOBRE</a></li>
                 <li><a href="{{ url_for('contato') }}">CONTATO</a></li>
-                <li><a href="blog">BLOG</a></li>
+                <li><a href="{{ url_for('blog') }}">BLOG</a></li>
             </ul>
         </nav>
-        <div id="idea"><a href="#"><img src="{{ url_for('static', filename='img/lampada.png') }}" width="30" height="30" alt="Sugira ideias"></a></div>
     </header>
     <aside class="sidebar">
         <ul>
             <li><a href="#" class="activate_menu">MENU</a></li>
-            <li><a href="#" class="sidebar_item">Item 1</a></li>
-            <li><a href="#" class="sidebar_item">Item 2</a></li>
-            <li><a href="#" class="sidebar_item">Item 3</a></li>
+            <li class="buscar">
+                <input type="text" class="txtBuscar" placeholder="Buscar..."/>
+                <img src="{{ url_for('static', filename='img/search.png') }}" class="btnBuscar" alt="Buscar"/>
+            </li>
+            <li><a href="#" class="sidebar_item">Elétrica</a></li>
+            <li><a href="#" class="sidebar_item">Eletrônica</a></li>
+            <li><a href="#" class="sidebar_item">IoT</a></li>
+            <li><a href="#" class="sidebar_item">Machine Learning</a></li>
+            <li><a href="#" class="sidebar_item">Data Science</a></li>
+            <li><a href="#" class="sidebar_item">Python</a></li>
+            <li><a href="#" class="sidebar_item">Java</a></li>
+            <li><a href="#" class="sidebar_item">JavaScript</a></li>
+            <li><a href="#" class="sidebar_item">Física</a></li>
+            <li><a href="#" class="sidebar_item">Matemática</a></li>
+            <li><a href="#" class="sidebar_item">Estatística</a></li>
         </ul>
     </aside>
+    <div id="idea">
+        <a href="#"><img src="{{ url_for('static', filename='img/lampada.png') }}" width="30" height="30" alt="Sugira ideias"></a>
+    </div>
     <main class="corpo">
         {% block conteudo %}
 
