@@ -47,9 +47,12 @@
             </ul>
         </nav>
     </header>
-    <aside class="sidebar">
+    <div id="activate_menu">
+        <img src="{{ url_for('static', filename='img/menu-slim.png') }}" width="25" height="25" alt="Menu">
+    </div>
+    <aside id="sidebar">
         <ul>
-            <li><a href="#" class="activate_menu">MENU</a></li>
+            <li id="menu">MENU</li>
             <li class="buscar">
                 <input type="text" class="txtBuscar" placeholder="Buscar..."/>
                 <img src="{{ url_for('static', filename='img/search.png') }}" class="btnBuscar" alt="Buscar"/>
@@ -68,7 +71,7 @@
         </ul>
     </aside>
     <div id="idea">
-        <a href="#"><img src="{{ url_for('static', filename='img/lampada.png') }}" width="30" height="30" alt="Sugira ideias"></a>
+        <img src="{{ url_for('static', filename='img/lampada.png') }}" width="30" height="30" alt="Sugira ideias">
     </div>
     <main class="corpo">
         {% block conteudo %}

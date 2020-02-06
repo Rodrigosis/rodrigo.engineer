@@ -156,11 +156,28 @@ footer ul li {
     display: inline-flex;
 }
 
-.sidebar {
-    top: 62px;
+#activate_menu {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    cursor: pointer;
+}
+
+#menu {
+    background-color: rgb(38, 48, 61);
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sidebar {
+    top: 63px;
+    left: -100%;
     width: 250px;
     display: block;
-    position: fixed;
+    position: absolute;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
 }
@@ -175,12 +192,4 @@ footer ul li {
 
 .sidebar_item:hover {
     color: #0431B4;
-}
-
-.activate_menu {
-    background-color: rgb(38, 48, 61);
-    color: white;
-    display: block;
-    padding: 12px;
-    text-decoration: none;
 }
