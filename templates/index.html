@@ -1,47 +1,133 @@
 {% extends "template.html" %}
 {% block conteudo %}
-    <h1 class="teste_css">Habilidades Profissionais</h1>
-    <ul>
-        <li>Engenharia Elétrico</li>
-        <li><progress max="100" value="20"></progress></li>
-        <li>Engenharia de Software</li>
-        <li><progress max="100" value="0"></progress></li>
-        <li>Inteligência Artificial</li>
-        <li><progress max="100" value="30"></progress></li>
-        <li>Internet das Coisas</li>
-        <li><progress max="100" value="10"></progress></li>
-    </ul>
-    <ul class="linguagens">
-        <li>
-            <ul class="frontend">
-                <li><h1>Front-end</h1></li>
-                <li>HTML</li>
-                <li><progress max="100" value="30"></progress></li>
-                <li>CSS</li>
-                <li><progress max="100" value="20"></progress></li>
+    <div>
+        <section class="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>
+                    Engenharia Elétrico 50%
+                    <p>Bacharelado</p>
+                </li>
+                <li>
+                    Engenharia de Software 18%
+                    <p>Bacharelado</p>
+                </li>
+                <li>
+                    Machine Learning
+                    <p>Extenção</p>
+                </li>
+                <li>
+                    Data Science
+                    <p>Extenção</p>
+                </li>
+                <li>
+                    Desenvolvedor Python
+                    <p>Extenção</p>
+                </li>
+                <li>
+                    Desenvolvedor Python Web
+                    <p>Extenção</p>
+                </li>
+                <li>
+                    Desenvolvedor Java
+                    <p>Extenção</p>
+                </li>
+                <li>
+                    Desenvolvedor Java Web
+                    <p>Extenção</p>
+                </li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Machine Learning</li>
+                <li><progress max="100" value="10"></progress></li>
+                <li>Deep Learning</li>
+                <li><progress max="100" value="10"></progress></li>
+                <li>Big Data</li>
+                <li><progress max="100" value="10"></progress></li>
+                <li>Data Science</li>
+                <li><progress max="100" value="10"></progress></li>
+                <li>NLP (Natural Language Processing)</li>
+                <li><progress max="100" value="10"></progress></li>
+                <li>Internet of Thinks</li>
+                <li><progress max="100" value="10"></progress></li>
+            </ul>
+        </section>
+        <section class="linguagens">
+            <h2>Linguagens de Programação</h2>
+            <ul>
+                <li>Python</li>
+                <li><progress max="100" value="60"></progress></li>
+                <li>Java</li>
+                <li><progress max="100" value="50"></progress></li>
                 <li>JavaScript</li>
                 <li><progress max="100" value="10"></progress></li>
             </ul>
-        </li>
-        <li>
-            <ul class="backend">
-                <li><h1>Back-end</h1></li>
-                <li>Java</li>
-                <li><progress max="100" value="50"></progress></li>
-                <li>Python</li>
+        </section>
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Português</li>
+                <li><progress max="100" value="100"></progress></li>
+                <li>Inglês</li>
                 <li><progress max="100" value="60"></progress></li>
-                <li>SQL</li>
-                <li><progress max="100" value="30"></progress></li>
             </ul>
-        </li>
-    </ul>
-    <h1>Idiomas</h1>
-    <ul>
-        <li>Português</li>
-        <li><progress max="100" value="100"></progress></li>
-        <li>Inglês</li>
-        <li><progress max="100" value="60"></progress></li>
-        <li>Espanhol</li>
-        <li><progress max="100" value="10"></progress></li>
-    </ul>
+        </section>
+    </div>
+    <div>
+        <h1>Conheça meus projetos</h1>
+        <blockquote>
+            <a href="{{ url_for('projetos') }}">
+                <h2>Nome de Projeto</h2>
+                <p>Uma breve descrição do projeto jhgdfjg wrgnjnwe sjbg efajbsejkfb</p>
+            </a>
+        </blockquote>
+        <blockquote>
+            <a href="{{ url_for('projetos') }}">
+                <h2>Nome de Projeto</h2>
+                <p>Uma breve descrição do projeto jhgdfjg wrgnjnwe sjbg efajbsejkfb</p>
+            </a>
+        </blockquote>
+        <blockquote>
+            <a href="{{ url_for('projetos') }}">
+                <h2>Nome de Projeto</h2>
+                <p>Uma breve descrição do projeto jhgdfjg wrgnjnwe sjbg efajbsejkfb</p>
+            </a>
+        </blockquote>
+    </div>
+    <div>
+        <h1>Experiência</h1>
+        <section>
+            <h2>Talentify.io</h2>
+            <ol>
+                <li>
+                    <p>Estagiário Machine Learning</p>
+                    <p>jun/2019 - Atual</p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Multialloy Metais e Ligas Especiais LTDA</h2>
+            <ol>
+                <li>
+                    <p>Assistente de engenharia</p>
+                    <p>jul/2018 – jun/2019</p>
+                </li>
+                <li>
+                    <p>Estagiário de engenharia</p>
+                    <p>jan/2017 – jun/2018</p>
+                </li>
+                <li>
+                    <p>Estagiário do controle de qualidade</p>
+                    <p>jan/2016 – dez/2016</p>
+                </li>
+                <li>
+                    <p>Menor aprendiz da qualidade</p>
+                    <p>fev/2014 – dez/2015</p>
+                </li>
+            </ol>
+        </section>
+    </div>
 {% endblock %}

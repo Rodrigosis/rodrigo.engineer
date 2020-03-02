@@ -12,7 +12,6 @@ header {
     align-items: center;
     display: inline-flex;
     width: 100%;
-    position: fixed;
 }
 
 header a {
@@ -32,6 +31,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     font-family: 'Baloo', cursive;
+    text-transform: uppercase;
 }
 
 header nav ul li a{
@@ -146,9 +146,10 @@ body {
 .corpo {
     font-family: "arial", sans-serif;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 30px;
-    box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .corpo h1 {
