@@ -12,32 +12,29 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-        <div>
-            <a href="{{ url_for('index') }}"><img id="my-img" src="{{ url_for('static', filename='img/favicon.jpg') }}" width="50" height="50" alt="Foto de Rodrigo da Silva Souza"></a>
-        </div>
+        <a href="{{ url_for('index') }}"><img id="my-img" src="{{ url_for('static', filename='img/favicon.jpg') }}" width="50" height="50" alt="Foto de Rodrigo da Silva Souza"></a>
         <h1><a href="{{ url_for('index') }}">Rodrigo Souza</a></h1>
-        <div>
-            <ul id="redes-sociais">
-                <li>
-                    <a href="https://github.com" data-tooltip="Veja meus projetos opensource" target="_blank">
-                        <img src="{{ url_for('static', filename='img/github-white.png') }}" width="30" height="30" alt="Icone do GitHub">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com" data-tooltip="Veja meu currículo" target="_blank">
-                        <img src="{{ url_for('static', filename='img/linkedin-white.png') }}" width="30" height="30" alt="Icone do Linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url_for('curriculo') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
-                        <img src="{{ url_for('static', filename='img/cv-white.png') }}" width="30" height="30" alt="Icone do curriculum vitae">
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <ul id="redes-sociais">
+            <li>
+                <a href="https://github.com" data-tooltip="Veja meus projetos opensource" target="_blank">
+                    <img src="{{ url_for('static', filename='img/github-white.png') }}" width="30" height="30" alt="Icone do GitHub">
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" data-tooltip="Veja meu currículo" target="_blank">
+                    <img src="{{ url_for('static', filename='img/linkedin-white.png') }}" width="30" height="30" alt="Icone do Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('curriculo') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
+                    <img src="{{ url_for('static', filename='img/cv-white.png') }}" width="30" height="30" alt="Icone do curriculum vitae">
+                </a>
+            </li>
+        </ul>
         <nav>
             <ul id="navegacao">
                 <li><a href="{{ url_for('projetos') }}">Projetos</a></li>

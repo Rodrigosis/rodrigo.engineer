@@ -1,4 +1,21 @@
 {% extends "template.html" %}
 {% block conteudo %}
-    <p>Contato</p>
+    <div class="contato">
+        <h1>Contato</h1>
+        <form>
+            <label for="contato_nome">Nome</label>
+            <input type="text" id="contato_nome">
+
+            <label for="contato_email">Email</label>
+            <input type="text" id="contato_email">
+
+            <label for="contato_assunto">Assunto</label>
+            <input type="text" id="contato_assunto">
+
+            <label for="contato_mensagem">Mensagem</label>
+            <textarea id="contato_mensagem"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 {% endblock %}

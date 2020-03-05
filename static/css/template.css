@@ -15,7 +15,7 @@ header {
 }
 
 header a {
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 header nav {
@@ -143,25 +143,116 @@ body {
 }
 
 /** Main **/
+#my_picture {
+    clear: right;
+    float: right;
+    width: 250px;
+    margin: 10px;
+}
+
 .corpo {
-    font-family: "arial", sans-serif;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 30px;
-    width: 70%;
-    margin: 0 auto;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 .corpo h1 {
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
     padding: 10PX;
+}
+
+.corpo h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .corpo ul li {
     font-family: 'Nunito', sans-serif;
     padding: 3px;
     font-size: 15px;
+}
+
+.my_background {
+    text-align: justify;
+    padding: 30px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.principais_projetos {
+    background-color: #B2BABB;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.experiencia {
+    text-align: justify;
+    padding: 30px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sobre {
+    text-align: justify;
+    padding: 30px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.projetos {
+    text-align: justify;
+    padding: 30px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contato {
+    text-align: justify;
+    padding: 30px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contato form label{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.contato form input{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.contato from textarea {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.blog {
+    text-align: justify;
+    padding: 30px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.admin {
+    text-align: justify;
+    padding: 30px 0;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /** footer **/
