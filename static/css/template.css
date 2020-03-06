@@ -183,6 +183,19 @@ body {
     margin: 0 auto;
 }
 
+.progress_bar {
+  width: 150px;
+  background-color: grey;
+  border-radius: 8px;
+}
+
+.bar {
+  width: 100px;
+  height: 12px;
+  background-color: #003399;
+  border-radius: 8px;
+}
+
 .principais_projetos {
     background-color: #B2BABB;
     text-align: center;
