@@ -139,7 +139,8 @@ header h1 a {
 }
 
 body {
-    max-width: 2000px;
+    max-width: 2500px;
+    margin: 0 auto;
     background-color: #E8E8E8;
 }
 
