@@ -51,7 +51,7 @@
         <ul>
             <li id="menu">MENU</li>
             <li class="buscar">
-                <input type="text" class="txtBuscar" placeholder="Buscar..."/>
+                <input type="search" class="txtBuscar" placeholder="Buscar..."/>
                 <img src="{{ url_for('static', filename='img/search.png') }}" class="btnBuscar" alt="Buscar"/>
             </li>
             <li><a href="#" class="sidebar_item">Elétrica</a></li>
@@ -72,20 +72,10 @@
     </div>
     <main class="corpo">
         {% block conteudo %}
-
         {% endblock %}
-        <!--{% for topico in lista %}
-            <tr>
-                <td>{{ topico }}</td>
-            </tr>
-        {% endfor %}
-        <h1>{{ titulo_my_name }}</h1>-->
     </main>
     <footer>
         <div>Rodrigo da Silva Souza 2020</div>
-        <ul>
-            <li><a href="#"><img src="{{ url_for('static', filename='img/bug-white.png') }}" width="15" height="15" alt="reporte um bug"></a></li>
-        </ul>
     </footer>
   </body>
   <script type="text/javascript" src="{{ url_for('static', filename='js/template.js') }}"></script>

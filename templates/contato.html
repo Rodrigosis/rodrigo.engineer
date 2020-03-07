@@ -4,18 +4,18 @@
         <h1>Contato</h1>
         <form>
             <label for="contato_nome">Nome</label>
-            <input type="text" id="contato_nome">
+            <input type="text" id="contato_nome" placeholder="Seu nome" required>
 
             <label for="contato_email">Email</label>
-            <input type="text" id="contato_email">
+            <input type="email" id="contato_email" placeholder="seuemail@dominio.com" required>
 
             <label for="contato_assunto">Assunto</label>
-            <input type="text" id="contato_assunto">
+            <input type="text" id="contato_assunto" placeholder="Assunto do email" required>
 
             <label for="contato_mensagem">Mensagem</label>
-            <textarea id="contato_mensagem"></textarea>
+            <textarea id="contato_mensagem" placeholder="Corpo do email" required></textarea>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="contato_enviar">
         </form>
     </div>
 {% endblock %}
