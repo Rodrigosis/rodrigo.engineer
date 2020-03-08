@@ -139,7 +139,7 @@ header h1 a {
 }
 
 body {
-    max-width: 2500px;
+    max-width: 3000px;
     margin: 0 auto;
     background-color: #E8E8E8;
 }
@@ -185,6 +185,12 @@ body {
     margin: 0 auto;
 }
 
+.my_background section {
+    display: inline-block;
+    text-align: top;
+    align-items: top;
+}
+
 .progress_bar {
   width: 150px;
   background-color: #99A3A4;
@@ -217,7 +223,7 @@ body {
     height: 250px;
     border: 2px solid;
     border-radius: 20px;
-    transition: 0.3s all;
+    transition: 5s all;
     color: red;
 }
 
@@ -238,6 +244,7 @@ body {
     padding: 30px 0;
     width: 50%;
     margin: 0 auto;
+    min-height: 800px;
 }
 
 .projetos {
@@ -245,6 +252,7 @@ body {
     padding: 30px 0;
     width: 50%;
     margin: 0 auto;
+    min-height: 800px;
 }
 
 .contato {
@@ -252,6 +260,7 @@ body {
     padding: 30px 0;
     width: 50%;
     margin: 0 auto;
+    min-height: 800px;
 }
 
 .contato form label {
@@ -298,6 +307,7 @@ body {
     padding: 30px 0;
     width: 50%;
     margin: 0 auto;
+    min-height: 800px;
 }
 
 .admin {
@@ -339,4 +349,8 @@ footer ul li {
     padding-left: 5px;
     padding-right: 5px;
     box-sizing: border-box;
+}
+
+@midia screen and (max-width: 500px) {
+
 }
