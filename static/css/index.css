@@ -1,0 +1,64 @@
+.my_background {
+    text-align: justify;
+    padding: 30px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.my_background section {
+    display: inline-block;
+    text-align: top;
+    align-items: top;
+}
+
+.progress_bar {
+  width: 150px;
+  background-color: #99A3A4;
+  border-radius: 4px;
+}
+
+.bar {
+  width: 100px;
+  height: 8px;
+  background-color: #003399;
+  border-radius: 4px;
+}
+
+.principais_projetos {
+    background-color: #B2BABB;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.principais_projetos a {
+    text-decoration: none;
+}
+
+.principais_projetos div {
+    display: inline-block;
+    margin: 30px 20px;
+    width: 170px;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 5s all;
+    color: red;
+}
+
+.principais_projetos div: hover {
+    transform: scale(2);
+    color: blue;
+}
+
+.experiencia {
+    text-align: justify;
+    padding: 30px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+@midia screen and (max-width: 500px) {
+
+}
