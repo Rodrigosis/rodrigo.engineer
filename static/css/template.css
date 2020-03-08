@@ -181,7 +181,7 @@ body {
 .my_background {
     text-align: justify;
     padding: 30px 0;
-    width: 50%;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -235,14 +235,14 @@ body {
 .experiencia {
     text-align: justify;
     padding: 30px 0;
-    width: 50%;
+    width: 940px;
     margin: 0 auto;
 }
 
 .sobre {
     text-align: justify;
     padding: 30px 0;
-    width: 50%;
+    width: 940px;
     margin: 0 auto;
     min-height: 800px;
 }
@@ -250,7 +250,7 @@ body {
 .projetos {
     text-align: justify;
     padding: 30px 0;
-    width: 50%;
+    width: 940px;
     margin: 0 auto;
     min-height: 800px;
 }
@@ -258,7 +258,7 @@ body {
 .contato {
     text-align: justify;
     padding: 30px 0;
-    width: 50%;
+    width: 940px;
     margin: 0 auto;
     min-height: 800px;
 }
@@ -270,12 +270,13 @@ body {
     padding: 5px 0;
 }
 
-.contato form input {
+.contato form .input {
     display: block;
     font-family: 'Nunito', sans-serif;
     width: 100%;
     padding: 5px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .contato form textarea {
@@ -285,27 +286,35 @@ body {
     height: 200px;
     padding: 5px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .contato_enviar {
-    width: 20%
-    border-radius: 5px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
     ffont-family: 'Baloo', cursive;
     border: None;
     background: #99A3A4;
     text-transform: uppercase;
     font-weight: bold;
     transition: 0.5s background;
+    padding: 5px;
+    margin-bottom: 20px;
 }
 
 .contato_enviar: hover {
     background: #7FB3D5;
 }
 
+.contato section {
+    margin: 50px 0;
+}
+
 .blog {
     text-align: justify;
     padding: 30px 0;
-    width: 50%;
+    width: 940px;
     margin: 0 auto;
     min-height: 800px;
 }
@@ -313,7 +322,7 @@ body {
 .admin {
     text-align: justify;
     padding: 30px 0;
-    width: 50%;
+    width: 940px;
     margin: 0 auto;
 }
 
