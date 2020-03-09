@@ -63,9 +63,9 @@
 
 .principais_projetos div {
     display: inline-block;
-    margin: 30px 20px;
-    width: 170px;
-    height: 250px;
+    margin: 30px 40px;
+    width: 200px;
+    height: 280px;
     border: 2px solid;
     border-radius: 20px;
     transition: 5s all;

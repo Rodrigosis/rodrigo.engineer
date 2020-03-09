@@ -6,6 +6,33 @@
     min-height: 800px;
 }
 
+.project_window {
+    border: 3px solid;
+    border-radius: 20px;
+    width: 900px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.project_window img{
+    float: left;
+    clear: bottom;
+    width: 200px;
+    height: 200px;
+    border-radius: 17px;
+}
+
+.project_window h2 {
+    text-align: center;
+}
+
+.project_window p {
+    display: block;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 230px;
+}
+
 @midia screen and (max-width: 500px) {
 
 }
