@@ -22,33 +22,27 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <a href="{{ url_for('index') }}"><img id="my-img" src="{{ url_for('static', filename='img/favicon.jpg') }}" width="50" height="50" alt="Foto de Rodrigo da Silva Souza"></a>
-        <h1><a href="{{ url_for('index') }}">Rodrigo Souza</a></h1>
-        <ul id="redes-sociais">
-            <li>
+    <header class="cabecalho">
+        <div>
+            <a href="{{ url_for('index') }}"><img id="my-img" src="{{ url_for('static', filename='img/favicon.jpg') }}" alt="Foto de Rodrigo da Silva Souza"></a>
+            <h1><a class="my_name" href="{{ url_for('index') }}">Rodrigo Souza</a></h1>
+            <div id="redes_sociais">
                 <a href="https://github.com" data-tooltip="Veja meus projetos opensource" target="_blank">
-                    <img src="{{ url_for('static', filename='img/github-white.png') }}" width="30" height="30" alt="Icone do GitHub">
+                    <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/github-white.png') }}" alt="Icone do GitHub">
                 </a>
-            </li>
-            <li>
                 <a href="https://linkedin.com" data-tooltip="Veja meu currículo" target="_blank">
-                    <img src="{{ url_for('static', filename='img/linkedin-white.png') }}" width="30" height="30" alt="Icone do Linkedin">
+                    <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/linkedin-white.png') }}" alt="Icone do Linkedin">
                 </a>
-            </li>
-            <li>
                 <a href="{{ url_for('curriculo') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
-                    <img src="{{ url_for('static', filename='img/cv-white.png') }}" width="30" height="30" alt="Icone do curriculum vitae">
+                    <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/cv-white.png') }}" alt="Icone do curriculum vitae">
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
         <nav>
-            <ul id="navegacao">
-                <li><a href="{{ url_for('projetos') }}">Projetos</a></li>
-                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
-                <li><a href="{{ url_for('contato') }}">Contato</a></li>
-                <li><a href="{{ url_for('blog') }}">Blog</a></li>
-            </ul>
+            <a class="navegacao_item" href="{{ url_for('projetos') }}">Projetos</a>
+            <a class="navegacao_item" href="{{ url_for('sobre') }}">Sobre</a>
+            <a class="navegacao_item" href="{{ url_for('contato') }}">Contato</a>
+            <a class="navegacao_item" href="{{ url_for('blog') }}">Blog</a>
         </nav>
     </header>
     <div id="activate_menu">

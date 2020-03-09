@@ -1,18 +1,43 @@
 .my_background {
-    text-align: justify;
+    align-items: top;
+    display: flex;
+    justify-content: space-between;
     padding: 30px 0;
     width: 940px;
     margin: 0 auto;
 }
 
 .my_background section {
-    display: inline-block;
-    text-align: top;
-    align-items: top;
+    display: block;
+}
+
+.formacao {
+    margin-bottom: 50px;
+}
+
+.cursos_extencao {
+    border-top: 3px solid;
+    margin-bottom: 50px;
+}
+
+.programming_languages {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.languages {
+    text-align: center;
+    border-top: 3px solid;
+    margin-bottom: 50px;
+}
+
+.skills {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .progress_bar {
-  width: 150px;
+  width: 200px;
   background-color: #99A3A4;
   border-radius: 4px;
 }
