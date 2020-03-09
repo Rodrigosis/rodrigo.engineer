@@ -69,12 +69,7 @@
     border: 2px solid;
     border-radius: 20px;
     transition: 5s all;
-    color: red;
-}
-
-.principais_projetos div: hover {
-    transform: scale(2);
-    color: blue;
+    color: #000000
 }
 
 .experiencia {

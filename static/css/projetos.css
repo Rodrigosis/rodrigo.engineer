@@ -29,8 +29,17 @@
 .project_window p {
     display: block;
     text-align: justify;
+    width: 650px;
+    height: 100px;
     margin-right: 30px;
     margin-left: 230px;
+}
+
+.tags_projeto {
+    display: flex;
+    flex-warp: warp;
+    margin-left: 230px;
+    margin-top: 10px;
 }
 
 @midia screen and (max-width: 500px) {

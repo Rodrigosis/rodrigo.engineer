@@ -6,6 +6,17 @@
     min-height: 800px;
 }
 
+.blog_window {
+    border-top: 3px solid;
+    padding: 0 20px;
+}
+
+.tags_blog {
+    display: flex;
+    flex-warp: warp;
+    margin: 10px 0;
+}
+
 @midia screen and (max-width: 500px) {
 
 }
