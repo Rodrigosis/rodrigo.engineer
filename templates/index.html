@@ -1,47 +1,177 @@
 {% extends "template.html" %}
 {% block conteudo %}
-    <h1 class="teste_css">Habilidades Profissionais</h1>
-    <ul>
-        <li>Engenharia Elétrico</li>
-        <li><progress max="100" value="20"></progress></li>
-        <li>Engenharia de Software</li>
-        <li><progress max="100" value="0"></progress></li>
-        <li>Inteligência Artificial</li>
-        <li><progress max="100" value="30"></progress></li>
-        <li>Internet das Coisas</li>
-        <li><progress max="100" value="10"></progress></li>
-    </ul>
-    <ul class="linguagens">
-        <li>
-            <ul class="frontend">
-                <li><h1>Front-end</h1></li>
-                <li>HTML</li>
-                <li><progress max="100" value="30"></progress></li>
-                <li>CSS</li>
-                <li><progress max="100" value="20"></progress></li>
-                <li>JavaScript</li>
-                <li><progress max="100" value="10"></progress></li>
+    <div class="my_background">
+        <section>
+            <div class="formacao">
+                <h2>Formação Acadêmica</h2>
+                <ul>
+                    <li>
+                        Engenharia Elétrico 50%
+                        <p>Bacharelado</p>
+                    </li>
+                    <li>
+                        Engenharia de Software 18%
+                        <p>Bacharelado</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cursos_extencao">
+                <h2>Cursos de Extenção</h2>
+                <ul>
+                    <li>
+                        Machine Learning
+                    </li>
+                    <li>
+                        Data Science
+                    </li>
+                    <li>
+                        Desenvolvedor Python
+                    </li>
+                    <li>
+                        Desenvolvedor Java
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div>
+            <section class="programming_languages">
+                <h2>Linguagens</h2>
+                <ul>
+                    <li>
+                        <h3>Python</h3>
+                        <div class="progress_bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Java</h3>
+                        <div class="progress_bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>
+                        <div class="progress_bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>
+                        <h3>Português</h3>
+                        <div class="progress_bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Inglês</h3>
+                        <div class="progress_bar">
+                            <div class="bar"></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <h3>Machine Learning</h3>
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>Deep Learning</h3>
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>NLP</h3>
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>Big Data</h3>
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>Data Science</h3>
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>IoT</h3>
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>CPS</h3>
+                    <div class="progress_bar">
+                        <div class="bar"></div>
+                    </div>
+                </li>
             </ul>
-        </li>
-        <li>
-            <ul class="backend">
-                <li><h1>Back-end</h1></li>
-                <li>Java</li>
-                <li><progress max="100" value="50"></progress></li>
-                <li>Python</li>
-                <li><progress max="100" value="60"></progress></li>
-                <li>SQL</li>
-                <li><progress max="100" value="30"></progress></li>
-            </ul>
-        </li>
-    </ul>
-    <h1>Idiomas</h1>
-    <ul>
-        <li>Português</li>
-        <li><progress max="100" value="100"></progress></li>
-        <li>Inglês</li>
-        <li><progress max="100" value="60"></progress></li>
-        <li>Espanhol</li>
-        <li><progress max="100" value="10"></progress></li>
-    </ul>
+        </section>
+    </div>
+    <div class="principais_projetos">
+        <h1>Conheça meus projetos</h1>
+        <a href="{{ url_for('projetos') }}">
+            <div>
+                    <h2>Machine Learning</h2>
+            </div>
+        </a>
+        <a href="{{ url_for('projetos') }}">
+            <div>
+                    <h2>Deep Learning</h2>
+            </div>
+        </a>
+        <a href="{{ url_for('projetos') }}">
+            <div>
+                    <h2>IoT</h2>
+            </div>
+        </a>
+    </div>
+    <div class="experiencia">
+        <h1>Experiência</h1>
+        <section>
+            <h2>Talentify.io</h2>
+            <ol>
+                <li>
+                    <p>Estagiário Machine Learning</p>
+                    <p>jun/2019 - Atual</p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Multialloy Metais e Ligas Especiais LTDA</h2>
+            <ol>
+                <li>
+                    <p>Assistente de engenharia</p>
+                    <p>jul/2018 – jun/2019</p>
+                </li>
+                <li>
+                    <p>Estagiário de engenharia</p>
+                    <p>jan/2017 – jun/2018</p>
+                </li>
+                <li>
+                    <p>Estagiário do controle de qualidade</p>
+                    <p>jan/2016 – dez/2016</p>
+                </li>
+                <li>
+                    <p>Menor aprendiz da qualidade</p>
+                    <p>fev/2014 – dez/2015</p>
+                </li>
+            </ol>
+        </section>
+    </div>
 {% endblock %}

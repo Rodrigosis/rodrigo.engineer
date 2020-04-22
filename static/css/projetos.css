@@ -1,0 +1,47 @@
+.projetos {
+    text-align: justify;
+    padding: 30px 0;
+    width: 940px;
+    margin: 0 auto;
+    min-height: 800px;
+}
+
+.project_window {
+    border: 3px solid;
+    border-radius: 20px;
+    width: 900px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.project_window img{
+    float: left;
+    clear: bottom;
+    width: 200px;
+    height: 200px;
+    border-radius: 17px;
+}
+
+.project_window h2 {
+    text-align: center;
+}
+
+.project_window p {
+    display: block;
+    text-align: justify;
+    width: 650px;
+    height: 100px;
+    margin-right: 30px;
+    margin-left: 230px;
+}
+
+.tags_projeto {
+    display: flex;
+    flex-warp: warp;
+    margin-left: 230px;
+    margin-top: 10px;
+}
+
+@midia screen and (max-width: 500px) {
+
+}

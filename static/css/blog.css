@@ -1,4 +1,4 @@
-.sobre {
+.blog {
     text-align: justify;
     padding: 30px 0;
     width: 940px;
@@ -6,11 +6,15 @@
     min-height: 800px;
 }
 
-#my_picture {
-    clear: right;
-    float: right;
-    width: 250px;
-    margin: 10px;
+.blog_window {
+    border-top: 3px solid;
+    padding: 0 20px;
+}
+
+.tags_blog {
+    display: flex;
+    flex-warp: warp;
+    margin: 10px 0;
 }
 
 @midia screen and (max-width: 500px) {

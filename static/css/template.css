@@ -1,65 +1,55 @@
 /** Header **/
-#my-img {
-    border-radius: 30px;
-}
-
-header {
+.cabecalho {
     background-color: #1C1C1C;
     font-family: "arial", sans-serif;
     color: #FFFAFA;
     padding: 5px;
+    width: 100%;
     box-sizing: border-box;
     align-items: center;
-    display: inline-flex;
-    width: 100%;
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
 }
 
-header a {
-    padding-left: 20px;
+.cabecalho div{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-header nav {
-    text-align: right;
+#my-img {
+    border-radius: 30px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
 }
 
-header nav ul {
-    position: absolute;
-    top: 22px;
-    right: 25px;
+.my_name {
+    font-size: 30px;
+    margin: 0 10px;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    color: #FFFAFA;
 }
 
-header nav ul li {
-    display: inline-block;
+.redes_sociais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes_sociais_icon {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.navegacao_item {
     font-family: 'Baloo', cursive;
-}
-
-header nav ul li a{
+    text-transform: uppercase;
     text-decoration: none;
     color: #FFFAFA;
     padding: 15px;
-}
-
-header ul li {
-    display: inline-block;
-}
-
-header ul li a {
-    text-decoration: none;
-}
-
-header h1 {
-    font-size: 30px;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 30px;
-    border-bottom-right-radius: 100px;
-    font-family: 'Righteous', cursive;
-}
-
-header h1 a {
-    text-decoration: none;
-    color: #FFFAFA;
 }
 
 /** Side bar**/
@@ -139,22 +129,30 @@ header h1 a {
 }
 
 body {
+    max-width: 3000px;
+    margin: 0 auto;
     background-color: #E8E8E8;
 }
 
 /** Main **/
 .corpo {
-    font-family: "arial", sans-serif;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 30px;
-    box-sizing: border-box;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 .corpo h1 {
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
     padding: 10PX;
+}
+
+.corpo h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .corpo ul li {
@@ -195,4 +193,8 @@ footer ul li {
     padding-left: 5px;
     padding-right: 5px;
     box-sizing: border-box;
+}
+
+@midia screen and (max-width: 500px) {
+
 }

@@ -1,0 +1,84 @@
+.my_background {
+    align-items: top;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.my_background section {
+    display: block;
+}
+
+.formacao {
+    margin-bottom: 50px;
+}
+
+.cursos_extencao {
+    border-top: 3px solid;
+    margin-bottom: 50px;
+}
+
+.programming_languages {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.languages {
+    text-align: center;
+    border-top: 3px solid;
+    margin-bottom: 50px;
+}
+
+.skills {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.progress_bar {
+  width: 200px;
+  background-color: #99A3A4;
+  border-radius: 4px;
+}
+
+.bar {
+  width: 100px;
+  height: 8px;
+  background-color: #003399;
+  border-radius: 4px;
+}
+
+.principais_projetos {
+    background-color: #B2BABB;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.principais_projetos a {
+    text-decoration: none;
+}
+
+.principais_projetos div {
+    display: inline-block;
+    margin: 30px 40px;
+    width: 200px;
+    height: 280px;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 5s all;
+    color: #000000
+}
+
+.experiencia {
+    text-align: justify;
+    padding: 30px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+@midia screen and (max-width: 500px) {
+
+}

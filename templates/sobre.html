@@ -1,12 +1,15 @@
 {% extends "template.html" %}
 {% block conteudo %}
-    <div>
-        <h4>Olá!</h4>
-        <p>Meu nome é Rodrigo, sou programador Python/Java especializado em Machine Learning, atualmente trabalho com NLP (Natural Langua Processing).</p>
+    <div class="sobre">
+        <h1>Sobre</h1>
+        <h2>Olá!</h2>
+        <img id="my_picture" src="{{ url_for('static', filename='img/perfil.png') }}" alt="Foto de Rodrigo da Silva Souza">
+        <p>Meu nome é Rodrigo, sou programador Python e Java especializado em Machine Learning, atualmente trabalho com NLP (Natural Langua Processing).</p>
+        <h2>Como iniciei minha carreira</h2>
         <p>Comecei minha carreira a os 14 anos (sim, acreditem, SENAI é vida!), mas não foi na área de programação, minha primeira formação foi em mecânica de usinagem, e meu primeiro emprego foi como menor aprendiz, em uma metalúrgica onde eu trabalhei por 5 anos e meio e passei por vários setores, entre eles o primeiro foi a usinagem, depois controle de qualidade, onde eu passei a maior parte do tempo e por fim a engenharia. Mas aquilo não me satisfazia, eu adorava tecnologia e a empresa não supria essa necessidade, esse foi o primeiro empurrão para área da programação.</p>
-        <p>Meu primeiro contato com programação foi utilizando código G para programar máquinas CNC, mas meu interesse por programar veio tempos depois ao ver várias matérias de sites de notícias falando de como o futuro seria e como a computação e sistemas inteligentes estavam mudando nossas vidas.</p>
-        <p>Assim que percebi qual é a tendência do mercado e a afinidade que eu tinha com aquilo comecei a me capacitar, fiz (e ainda faço) vários cursos de extensão, e na primeira oportunidade que tive, pedi demissão e comecei a trabalhar com Machine Learning. Hoje estou cursando engenharia elétrica e engenharia de software e continuo me aprofundando na área com cursos e livros.</p>
-        <h4>E o futuro?</h4>
+        <p>Meu primeiro contato com programação foi utilizando código G para programar máquinas CNC, mas meu interesse por programar veio tempos depois ao ver várias matérias de sites de notícias falando de como o futuro seria e como a computação e sistemas inteligentes estavam mudando o mundo.</p>
+        <p>Assim que percebi qual é a tendência do mercado e a afinidade que eu tinha com aquilo, comecei a me capacitar, fiz (e ainda faço) vários cursos de extensão, e na primeira oportunidade que tive, pedi demissão e comecei a trabalhar com Machine Learning. Hoje estou cursando engenharia elétrica e engenharia de software e continuo me aprofundando na área com cursos e livros.</p>
+        <h2>E o futuro?</h2>
         <p>Gostei tanto do meu trabalho atual que pretendo começar meu mestrado assim que me graduar, e quem sabe até um doutorado! </p>
     </div>
 

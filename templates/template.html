@@ -2,49 +2,47 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Rodrigo Souza</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.jpg') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/projetos.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/sobre.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/contato.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="cabecalho">
         <div>
-            <a href="{{ url_for('index') }}"><img id="my-img" src="{{ url_for('static', filename='img/favicon.jpg') }}" width="50" height="50" alt="Foto de Rodrigo da Silva Souza"></a>
-        </div>
-        <h1><a href="{{ url_for('index') }}">Rodrigo Souza</a></h1>
-        <div>
-            <ul id="redes-sociais">
-                <li>
-                    <a href="https://github.com" data-tooltip="Veja meus projetos opensource" target="_blank">
-                        <img src="{{ url_for('static', filename='img/github-white.png') }}" width="30" height="30" alt="Icone do GitHub">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com" data-tooltip="Veja meu currículo" target="_blank">
-                        <img src="{{ url_for('static', filename='img/linkedin-white.png') }}" width="30" height="30" alt="Icone do Linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url_for('curriculo') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
-                        <img src="{{ url_for('static', filename='img/cv-white.png') }}" width="30" height="30" alt="Icone do curriculum vitae">
-                    </a>
-                </li>
-            </ul>
+            <a href="{{ url_for('index') }}"><img id="my-img" src="{{ url_for('static', filename='img/favicon.jpg') }}" alt="Foto de Rodrigo da Silva Souza"></a>
+            <h1><a class="my_name" href="{{ url_for('index') }}">Rodrigo Souza</a></h1>
+            <div id="redes_sociais">
+                <a href="https://github.com" data-tooltip="Veja meus projetos opensource" target="_blank">
+                    <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/github-white.png') }}" alt="Icone do GitHub">
+                </a>
+                <a href="https://linkedin.com" data-tooltip="Veja meu currículo" target="_blank">
+                    <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/linkedin-white.png') }}" alt="Icone do Linkedin">
+                </a>
+                <a href="{{ url_for('curriculo') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
+                    <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/cv-white.png') }}" alt="Icone do curriculum vitae">
+                </a>
+            </div>
         </div>
         <nav>
-            <ul id="navegacao">
-                <li><a href="{{ url_for('projetos') }}">PROJETOS</a></li>
-                <li><a href="{{ url_for('sobre') }}">SOBRE</a></li>
-                <li><a href="{{ url_for('contato') }}">CONTATO</a></li>
-                <li><a href="{{ url_for('blog') }}">BLOG</a></li>
-            </ul>
+            <a class="navegacao_item" href="{{ url_for('projetos') }}">Projetos</a>
+            <a class="navegacao_item" href="{{ url_for('sobre') }}">Sobre</a>
+            <a class="navegacao_item" href="{{ url_for('contato') }}">Contato</a>
+            <a class="navegacao_item" href="{{ url_for('blog') }}">Blog</a>
         </nav>
     </header>
     <div id="activate_menu">
@@ -54,7 +52,7 @@
         <ul>
             <li id="menu">MENU</li>
             <li class="buscar">
-                <input type="text" class="txtBuscar" placeholder="Buscar..."/>
+                <input type="search" class="txtBuscar" placeholder="Buscar..."/>
                 <img src="{{ url_for('static', filename='img/search.png') }}" class="btnBuscar" alt="Buscar"/>
             </li>
             <li><a href="#" class="sidebar_item">Elétrica</a></li>
@@ -75,20 +73,10 @@
     </div>
     <main class="corpo">
         {% block conteudo %}
-
         {% endblock %}
-        <!--{% for topico in lista %}
-            <tr>
-                <td>{{ topico }}</td>
-            </tr>
-        {% endfor %}
-        <h1>{{ titulo_my_name }}</h1>-->
     </main>
     <footer>
-        <div>&copy; Rodrigo da Silva Souza 2019</div>
-        <ul>
-            <li><a href="#"><img src="{{ url_for('static', filename='img/bug-white.png') }}" width="15" height="15" alt="reporte um bug"></a></li>
-        </ul>
+        <div>Rodrigo da Silva Souza 2020</div>
     </footer>
   </body>
   <script type="text/javascript" src="{{ url_for('static', filename='js/template.js') }}"></script>

@@ -1,16 +1,8 @@
-.sobre {
+.admin {
     text-align: justify;
     padding: 30px 0;
     width: 940px;
     margin: 0 auto;
-    min-height: 800px;
-}
-
-#my_picture {
-    clear: right;
-    float: right;
-    width: 250px;
-    margin: 10px;
 }
 
 @midia screen and (max-width: 500px) {
