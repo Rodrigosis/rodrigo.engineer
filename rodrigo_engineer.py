@@ -31,7 +31,7 @@ def blog():
 
 @app.route('/curriculo')
 def curriculo():
-    return render_template('cv.html')
+    return render_template('curriculo.html')
 
 
 @app.route('/admin')

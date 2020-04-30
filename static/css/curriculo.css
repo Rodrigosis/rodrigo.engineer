@@ -1,0 +1,137 @@
+html {
+    width: 940px;
+    margin: 0 auto;
+}
+body {
+    width: 100%;
+    display: inline-flex;
+}
+
+.left {
+    width: 25%;
+    padding: 15px;
+    padding-top: 40px;
+    background-color: #E6E6E6;
+}
+
+.right {
+    width: 75%;
+    padding: 15px;
+    padding-top: 40px;
+    background-color: #FAFAFA;
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    align-content: center;
+    display: inline-flex;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px black solid;
+}
+
+h3 {
+    font-size: 17px;
+    font-family: 'Signika', sans-serif;
+    padding-top: 15px;
+}
+
+h4 {
+    font-size: 17px;
+    font-family: 'Signika', sans-serif;
+    padding: 2px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 2px;
+}
+
+.habilidades p {
+    padding: 4px;
+}
+
+.idiomas p {
+    padding: 5px;
+}
+
+.header {
+    display: inline-flex;
+}
+
+.objetivo {
+    width: 49%;
+    margin-right: auto;
+}
+
+.perfil {
+    width: 49%;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 15px;
+    padding: 5px;
+}
+  
+
+ul li {
+    font-size: 17px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 2px;
+}
+
+.progress_bar {
+    width: 80%;
+    margin: 2px;
+    background-color: #99A3A4;
+    border-radius: 4px;
+  }
+  
+  .python {
+    width: 80%;
+    height: 6px;
+    background-color: #003399;
+    border-radius: 4px;
+  }
+
+  .java {
+    width: 70%;
+    height: 6px;
+    background-color: #003399;
+    border-radius: 4px;
+  }
+
+  .javascript {
+    width: 20%;
+    height: 6px;
+    background-color: #003399;
+    border-radius: 4px;
+  }
+
+  .sql {
+    width: 40%;
+    height: 6px;
+    background-color: #003399;
+    border-radius: 4px;
+  }
