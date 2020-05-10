@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  app:
+  site:
     build:
       context: .
       target: production
@@ -15,4 +15,7 @@ services:
       - GUNICORN_WORKERS=1
       - GUNICORN_THREADS=30
     networks:
-      - network site
+      - site_network
+
+networks:
+  site_network:
