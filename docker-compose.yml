@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  site:
+    build:
+      context: .
+      target: production
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/site
+    environment:
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+      - GUNICORN_WORKERS=1
+      - GUNICORN_THREADS=5
+    networks:
+      - site_network
+
+networks:
+  site_network:

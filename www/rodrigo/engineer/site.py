@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
 
 
@@ -30,12 +31,9 @@ def blog():
 
 @app.route('/curriculo')
 def curriculo():
-    return render_template('cv.html')
+    return render_template('curriculo.html')
 
 
 @app.route('/admin')
 def admin():
     return render_template('admin.html')
-
-
-app.run(debug=True)
