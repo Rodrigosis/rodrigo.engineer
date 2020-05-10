@@ -1,13 +1,25 @@
-FROM python:latest
+FROM python:3.8-buster AS base
 
-MAINTAINER Rodrigo da Silva Souza
+WORKDIR /usr/src/site
 
-WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
-ADD . /app
+COPY . .
 
-RUN pip install -r requirements.txt
+ENV FLASK_APP rodrigo_engineer.py
+ENV FLASK_RUN_HOST 0.0.0.0
+ENV FLASK_RUN_PORT=3000
+ENV GUNICORN_WORKERS=1
+ENV GUNICORN_THREADS=100
+ENV APP_CONFIG_FILE config.py
 
-EXPOSE 3000
+EXPOSE ${FLASK_RUN_PORT}
 
-CMD ["python", "rodrigo_engineer.py"]
+FROM base AS production
+# for further information:
+# https://docs.gunicorn.org/en/stable/design.html#how-many-workers
+# https://stackoverflow.com/a/41696500
+CMD gunicorn --bind :${FLASK_RUN_PORT} --workers ${GUNICORN_WORKERS} --threads ${GUNICORN_THREADS} "rodrigo_engineer.py"
+
+# CMD ["flask", "run"]
