@@ -13,7 +13,7 @@ services:
       - FLASK_ENV=development
       - FLASK_DEBUG=1
       - GUNICORN_WORKERS=1
-      - GUNICORN_THREADS=30
+      - GUNICORN_THREADS=5
     networks:
       - site_network
 
