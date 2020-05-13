@@ -33,15 +33,15 @@
                 <a href="https://www.linkedin.com/in/rodrigo-silva-souza/" data-tooltip="Veja meu currículo" target="_blank">
                     <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/linkedin-white.png') }}" alt="Icone do Linkedin">
                 </a>
-                <a href="{{ url_for('curriculo') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
+                <a href="{{ url_for('curriculum') }}" data-tooltip="Veja meu curriculum vitae" target="_blank">
                     <img class="redes_sociais_icon" src="{{ url_for('static', filename='img/cv-white.png') }}" alt="Icone do curriculum vitae">
                 </a>
             </div>
         </div>
         <nav>
-            <a class="navegacao_item" href="{{ url_for('projetos') }}">Projetos</a>
-            <a class="navegacao_item" href="{{ url_for('sobre') }}">Sobre</a>
-            <a class="navegacao_item" href="{{ url_for('contato') }}">Contato</a>
+            <a class="navegacao_item" href="{{ url_for('projects') }}">Projetos</a>
+            <a class="navegacao_item" href="{{ url_for('about') }}">Sobre</a>
+            <a class="navegacao_item" href="{{ url_for('contact') }}">Contato</a>
             <a class="navegacao_item" href="{{ url_for('blog') }}">Blog</a>
         </nav>
     </header>
