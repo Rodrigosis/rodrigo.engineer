@@ -43,10 +43,73 @@
 }
 
 .bar {
-  width: 100px;
   height: 8px;
   background-color: #003399;
   border-radius: 4px;
+}
+
+.python {
+  width: 80%;
+}
+
+.java {
+  width: 70%;
+}
+
+.javascript {
+  width: 20%;
+}
+
+.sql {
+  width: 50%;
+}
+
+.portuguese {
+  width: 100%;
+}
+
+.english {
+  width: 50%;
+}
+
+.machine_learning {
+  width: 60%;
+}
+
+.deep_learning {
+  width: 30%;
+}
+
+.nlp {
+  width: 60%;
+}
+
+.big_data {
+  width: 50%;
+}
+
+.data_science {
+  width: 70%;
+}
+
+.docker {
+  width: 50%;
+}
+
+.linux {
+  width: 60%;
+}
+
+.cloud_computing {
+  width: 60%;
+}
+
+.iot {
+  width: 40%;
+}
+
+.cyber_physical_system {
+  width: 20%;
 }
 
 .principais_projetos {

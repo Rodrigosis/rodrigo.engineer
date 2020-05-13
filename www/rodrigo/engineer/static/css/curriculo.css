@@ -107,31 +107,25 @@ ul li {
     background-color: #99A3A4;
     border-radius: 4px;
   }
-  
-  .python {
+
+.bar {
+    height: 6px;
+    background-color: #003399;
+    border-radius: 4px;
+}
+
+.python {
     width: 80%;
-    height: 6px;
-    background-color: #003399;
-    border-radius: 4px;
-  }
+}
 
-  .java {
+.java {
     width: 70%;
-    height: 6px;
-    background-color: #003399;
-    border-radius: 4px;
-  }
+}
 
-  .javascript {
+.javascript {
     width: 20%;
-    height: 6px;
-    background-color: #003399;
-    border-radius: 4px;
-  }
+}
 
-  .sql {
-    width: 40%;
-    height: 6px;
-    background-color: #003399;
-    border-radius: 4px;
-  }
+.sql {
+    width: 50%;
+}
