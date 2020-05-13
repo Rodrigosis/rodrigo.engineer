@@ -9,18 +9,18 @@ def index():
     return render_template('index.html', titulo_my_name='Rodrigo da Silva Souza')
 
 
-@app.route('/sobre')
-def sobre():
+@app.route('/about')
+def about():
     return render_template('sobre.html')
 
 
-@app.route('/projetos')
-def projetos():
+@app.route('/projects')
+def projects():
     return render_template('projetos.html')
 
 
-@app.route('/contato')
-def contato():
+@app.route('/contact')
+def contact():
     return render_template('contato.html')
 
 
@@ -29,8 +29,8 @@ def blog():
     return render_template('blog.html')
 
 
-@app.route('/curriculo')
-def curriculo():
+@app.route('/curriculum')
+def curriculum():
     return render_template('curriculo.html')
 
 
