@@ -1,5 +1,5 @@
-from www.rodrigo.engineer import site
+from www.rodrigo.engineer import views
 
 
 def create_site():
-    return site.app
+    return views.app
