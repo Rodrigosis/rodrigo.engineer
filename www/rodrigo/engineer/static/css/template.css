@@ -1,3 +1,11 @@
+/** body **/
+body {
+    max-width: 3000px;
+    min-width: 1000px;
+    margin: 0 auto;
+    background-color: #E8E8E8;
+}
+
 /** Header **/
 .cabecalho {
     background-color: #1C1C1C;
@@ -120,20 +128,6 @@
     cursor: pointer;
 }
 
-/** body **/
-#idea {
-    position: fixed;
-    right: 20px;
-    bottom: 30px;
-    cursor: pointer;
-}
-
-body {
-    max-width: 3000px;
-    margin: 0 auto;
-    background-color: #E8E8E8;
-}
-
 /** Main **/
 .corpo {
     margin-top: 50px;
@@ -195,6 +189,25 @@ footer ul li {
     box-sizing: border-box;
 }
 
-@midia screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  .cabecalho{
+    display: block;
+    padding: 10px;
+  }
 
+  .cabecalho div {
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  nav {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .navegacao_item {
+    text-decoration: none;
+    font-size: 30px;
+  }
 }
