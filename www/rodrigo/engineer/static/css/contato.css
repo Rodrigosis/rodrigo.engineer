@@ -54,6 +54,35 @@
     margin: 50px 0;
 }
 
-@midia screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+
+  .contato h1 {
+    font-size: 30px;
+  }
+
+  .contato h2 {
+    font-size: 30px;
+  }
+
+  .contato form label {
+    font-size: 25px;
+  }
+
+  .input {
+    height: 60px;
+    font-size: 23px;
+  }
+
+  .contato form textarea {
+    height: 300px;
+  }
+
+  .contato_enviar {
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
 
 }
