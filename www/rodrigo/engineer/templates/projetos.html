@@ -1,5 +1,8 @@
 {% extends "template.html" %}
 {% block conteudo %}
+    <header>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/projetos.css') }}">
+    </header>
     <div class="projetos">
         <h1>EM BREVE!</h1>
         <img src="{{ url_for('static', filename='img/making.png') }}" alt="viiso" width="100%">

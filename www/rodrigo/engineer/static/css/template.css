@@ -1,3 +1,11 @@
+/** body **/
+body {
+    max-width: 3000px;
+    min-width: 1000px;
+    margin: 0 auto;
+    background-color: #E8E8E8;
+}
+
 /** Header **/
 .cabecalho {
     background-color: #1C1C1C;
@@ -120,20 +128,6 @@
     cursor: pointer;
 }
 
-/** body **/
-#idea {
-    position: fixed;
-    right: 20px;
-    bottom: 30px;
-    cursor: pointer;
-}
-
-body {
-    max-width: 3000px;
-    margin: 0 auto;
-    background-color: #E8E8E8;
-}
-
 /** Main **/
 .corpo {
     margin-top: 50px;
@@ -181,20 +175,67 @@ footer div {
     position: absolute;
 }
 
-footer ul {
-    position: absolute;
-    text-align: bottom;
-    right: 10px;
-    padding: 3px;
-}
+@media screen and (max-width: 700px) {
+  .cabecalho{
+    display: block;
+    padding: 10px;
+  }
 
-footer ul li {
-    display: inline;
-    padding-left: 5px;
-    padding-right: 5px;
-    box-sizing: border-box;
-}
+  .cabecalho div {
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
 
-@midia screen and (max-width: 500px) {
+  nav {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .navegacao_item {
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .redes_sociais_icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+  }
+
+  .my_name {
+    font-size: 50px;
+  }
+
+  #my-img {
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  footer {
+    height: 60px;
+  }
+
+  footer div {
+    font-size: 25px;
+    padding: 13px;
+  }
+
+  li {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 25px;
+  }
 
 }
