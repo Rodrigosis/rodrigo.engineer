@@ -1,5 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
+from www.rodrigo.engineer import trigger_email
 
 app = Flask(__name__)
 
@@ -19,8 +20,21 @@ def projects():
     return render_template('projetos.html')
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
+
+    if request.method == 'POST':
+        issuer_name = request.form['contato_nome']
+        subject = request.form['contato_assunto']
+        message_body = request.form['contato_mensagem']
+        sender = request.form['contato_email']
+
+        email_header = issuer_name + ' - ' + subject
+
+        trigger_email.TriggerEmail(app).submit(email_header, message_body, sender, ['rodrigo.sis.s7@gmail.com'])
+
+    # trigger_email.TriggerEmail(app).submit()
+
     return render_template('contato.html')
 
 
@@ -37,3 +51,8 @@ def curriculum():
 @app.route('/admin')
 def admin():
     return render_template('admin.html')
+
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()
