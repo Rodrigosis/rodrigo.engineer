@@ -1,5 +1,7 @@
-from flask import Flask, render_template
+import os
+from flask import Flask, render_template, request
 
+from www.rodrigo.engineer.trigger_email import TriggerEmail
 
 app = Flask(__name__)
 
@@ -19,8 +21,17 @@ def projects():
     return render_template('projetos.html')
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
+
+    if request.method == 'POST':
+        issuer_name = request.form['name']
+        subject = request.form['subject']
+        message_body = request.form['message']
+        sender = request.form['email']
+
+        TriggerEmail(app).submit(issuer_name, message_body, sender, subject)
+
     return render_template('contato.html')
 
 
