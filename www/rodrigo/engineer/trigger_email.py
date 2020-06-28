@@ -1,5 +1,6 @@
 from typing import List
 from flask_mail import Mail, Message
+import os
 
 
 class TriggerEmail:
@@ -7,12 +8,11 @@ class TriggerEmail:
     def __init__(self, app):
         self.mail = Mail(app)
 
-    def submit(self, subject: str, message_body: str, sender: str, recipients: List[str]):
+    def submit(self, issuer_name: str, message_body: str, sender: str, subject: str):
+        message_body = sender + '\n\n' + message_body
+        subject = issuer_name + ' - ' + subject
 
-        msg = Message(subject, sender=sender, recipients=recipients, body=message_body)
-        # msg = Message(subject='teste',
-        #               sender='rodrigo.sis.s6@gmail.com',
-        #               recipients=['rodrigo.sis.s7@gmail.com'],
-        #               body='test email')
+        msg = Message(subject, sender=os.environ.get('MAIL_USERNAME'), recipients=[os.environ.get('MAIL_DESTINATION')],
+                      body=message_body)
 
         self.mail.send(msg)
